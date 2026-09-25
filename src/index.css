@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  /* AMOLED pure black overrides */
+  html.amoled body {
+    background-color: #000000 !important;
+  }
+  html.amoled .bg-slate-950 {
+    background-color: #000000 !important;
+  }
+  html.amoled .bg-slate-900\/70,
+  html.amoled .bg-slate-900\/60,
+  html.amoled .bg-slate-900 {
+    background-color: #080808 !important;
+  }
+
+  /* Light theme overrides */
+  html.light body {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+  html.light .bg-slate-950 {
+    background-color: #ffffff !important;
+  }
+  html.light .bg-slate-900\/70,
+  html.light .bg-slate-900\/60,
+  html.light .bg-slate-900 {
+    background-color: #f1f5f9 !important;
+  }
+  html.light .border-slate-800,
+  html.light .border-slate-800\/80,
+  html.light .border-slate-800\/90,
+  html.light .border-slate-900 {
+    border-color: #e2e8f0 !important;
+  }
+  html.light .text-slate-100 {
+    color: #0f172a !important;
+  }
+  html.light .text-slate-200 {
+    color: #1e293b !important;
+  }
+  html.light .text-slate-300 {
+    color: #334155 !important;
+  }
+  html.light .text-slate-400 {
+    color: #64748b !important;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

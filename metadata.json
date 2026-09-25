@@ -1,0 +1,6 @@
+{
+  "name": "LINGUAFLOW AI",
+  "description": "Next-generation multilingual translation laboratory featuring AI neural translation, live conversation mode, speech synthesis, document translation, and linguistic DNA analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
